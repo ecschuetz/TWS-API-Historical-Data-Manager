@@ -34,8 +34,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Neural Net Fitting of given historical Market Data. 
-v.1.0 receives historical information. The Given Arguments can be choosen for Input or Output values
+Neural Net Fitting of given historical Market Data. The Given Arguments can be checked for Input and Output values. After Setting Up Input & Output, you be able to create a neural Net with
+```sh
+ nftool
+  ```
+
+v.1.0 receives historical information.
 the command (see https://de.mathworks.com/help/releases/R2020b/trading/ibtws.history.html)
 ```sh
  d= history(ib,ibContract,startdate,enddate,ticktype,period,tradehours)
