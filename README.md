@@ -12,7 +12,7 @@
     <img src="images/ConfigTable.png" alt="Logo" width="1000" height="700">
   </a>
 
-  <h3 align="center">GUI for testing Connection and Save and manage Datasheets</h3>
+  <h3 align="center">GUI for Testing Connection, Save and Manage Datasheets</h3>
 
   <p align="center">
     TWS API for a simple request and managing of historical Stock Information
