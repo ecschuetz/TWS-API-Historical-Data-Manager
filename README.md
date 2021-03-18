@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/ConfigTable.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">GUI for testing Connection and Save and manage Datasheets</h3>
