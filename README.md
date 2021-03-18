@@ -36,7 +36,11 @@
 
 Neural Net Fitting of given historical Market Data. 
 v.1.0 receives historical information. The Given Arguments can be choosen for Input or Output values
-the command history(ib,ibContract,f) includess: 
+the command (see https://de.mathworks.com/help/releases/R2020b/trading/ibtws.history.html)
+```sh
+ d= history(ib,ibContract,startdate,enddate,ticktype,period,tradehours)
+  ```
+  includes: 
 
 - Numeric representation of a date
 
@@ -55,6 +59,9 @@ the command history(ib,ibContract,f) includess:
 - Weighted average price
 
 - Flag indicating if there are gaps in the bar
+
+
+
 
 
 
