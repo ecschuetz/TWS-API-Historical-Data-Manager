@@ -63,8 +63,10 @@ the command history(ib,ibContract,f) includess:
 
 <!-- GETTING STARTED -->
 ## Getting Started
-Make Sure you have the latest TWS API see: https://interactivebrokers.github.io
+Make sure you have the latest TWS API see: https://interactivebrokers.github.io
+
 If you have a MATLAB license, just get all .m and the .fig files and Run Programm.m
+
 If you dont have MATLAB, install the .exe file in the Excecutable folder
 
 If you are able to Run the GUI, make sure youre Trader Workstation is set up correctly with input arguments you choose in the GUI
@@ -72,8 +74,16 @@ If you are able to Run the GUI, make sure youre Trader Workstation is set up cor
 ### How it works
 
 click connect to make to run the given arguments from the API-Config TWS Panel and the Input Panel
-Run Receive Data button to get the historical Data
-Select Input and Output arguments to build your own neural Network with nftool (click the Neural Net Fitting button)
-Save the historical Data by clicking Save to .xls. The Sheet will be located where the Programm.m or .exe is located
-Click Disconnect to make the next Analyse
+
+Run 'Receive Data' button to get the historical Data
+
+Select Input and Output arguments to build your own neural Network with nftool (click the 'Neural Net Fitting' button)
+
+Save the historical Data by clicking 'Save to .xls'.
+
+The Sheet will be located where the Programm.m or .exe is located
+
+Click Disconnect 
+
+Start your next analysis
 
