@@ -72,11 +72,11 @@ the command (see https://de.mathworks.com/help/releases/R2020b/trading/ibtws.his
 
 <!-- GETTING STARTED -->
 ## Getting Started
-Make sure you have the latest TWS API see: https://interactivebrokers.github.io
+Make sure you have the latest stable version of TWS API see: https://interactivebrokers.github.io
 
 If you have a MATLAB license, just get all .m and the .fig files and Run Programm.m
 
-If you dont have MATLAB, install the .exe <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager/blob/master/Excecutable/TWS_API_Historical-Data-Manager.exe">Excecutable for Windows</a> file in the Excecutable folder
+If you dont have MATLAB, install the Windows Excecutable <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager/blob/master/Excecutable/TWS_API_Historical-Data-Manager.exe">TWS_API_Historical-Data-Manager.exe</a>
 
 If you are able to Run the GUI, make sure youre Trader Workstation is set up correctly with input arguments you choose in the GUI
 
