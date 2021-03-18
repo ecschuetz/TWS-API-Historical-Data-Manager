@@ -12,7 +12,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">For testing</h3>
+  <h3 align="center">GUI for testing Connection and Save and manage Datasheets</h3>
 
   <p align="center">
     TWS API for a simple request and managing of historical Stock Information
