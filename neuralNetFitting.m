@@ -49,4 +49,11 @@ Output=[];
     end
 assignin('base','Input',Input)
 assignin('base','Output',Output)
-nftool
+handles.Input=Input;
+handles.Output=Output;
+guidata(hObject, handles);
+guidata(hObject, handles);
+Nftool
+genFunction(net,'NeuralNet')
+set(handles.edit12,'string','Neuronal Net Built Successful');
+

@@ -22,7 +22,7 @@ function varargout = Programm(varargin)
 
 % Edit the above text to modify the response to help Programm
 
-% Last Modified by GUIDE v2.5 18-Mar-2021 13:25:23
+% Last Modified by GUIDE v2.5 18-Mar-2021 23:55:31
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -373,6 +373,7 @@ neuralNetFitting
 % --- Executes on button press in pushbutton5.
 function pushbutton5_Callback(hObject, eventdata, handles)
 xlswrite(get(handles.edit2,'String'),handles.d)
+msgbox(sprintf('Operation Completed! Historical Data for Symbol %s was created and saved into your Folder',get(handles.edit2,'String')),'Success')
 
 
 
@@ -572,3 +573,53 @@ function Input8_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 % Hint: get(hObject,'Value') returns toggle state of Input8
+
+
+% --- Executes on button press in pushbutton7.
+function pushbutton7_Callback(hObject, eventdata, handles)
+nnans=NeuralNet(handles.Input')
+cla(handles.axes1);
+axes(handles.axes1);
+plot(handles.d(:,8), 'Parent', handles.axes1);
+hold on
+plot(nnans, 'Parent', handles.axes1)
+xlabel('Time lapse in days per period');
+ylabel('Weighted average price');
+legend('Historical Data','Neural Net')
+%Name(get(handles.Input));
+         % [file folder]=uigetfile('*.m'); %prompt user to select mfile
+         % File=fullfile(folder,file)
+         % Ans=File(handles.Input);
+          
+         
+
+% --- Executes on button press in pushbutton8.
+function pushbutton8_Callback(hObject, eventdata, handles)
+cla(handles.axes1)
+
+function edit13_Callback(hObject, eventdata, handles)
+% hObject    handle to edit13 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit13 as text
+%        str2double(get(hObject,'String')) returns contents of edit13 as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit13_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit13 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on button press in pushbutton9.
+function pushbutton9_Callback(hObject, eventdata, handles)
+genFunction(handles.net,get(handles.edit2,'String'))
+msgbox(sprintf('Operation Completed! Neural Net .m file for Symbol %s was created and saved into your Folder',get(handles.edit2,'String')),'Success')

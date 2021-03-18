@@ -12,7 +12,9 @@ cla(handles.axes1)
     end
      if get(handles.checkbox3,'value')==1
         d = history(handles.ib,handles.ibContract1,handles.startdate,handles.enddate,'','1 month');
-    end
+     end
+    handles.d=d;
+    guidata(hObject, handles);
  
 assignin('base','d',d)
 if isa(d(1:1),'double')==1 
