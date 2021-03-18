@@ -32,7 +32,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Neural Net Fitting of given historical Market Data. The Given Arguments can be checked for Input and Output values. After Setting Up Input & Output, you be able to create a neural Net with
+Neural Net Fitting of given historical Market Data. The Given Arguments can be checked for Input and Output values. After Setting Up Input & Output, you be able to create a neural Net (see https://de.mathworks.com/help/deeplearning/gs/fit-data-with-a-neural-network.html)
 ```sh
  nftool
   ```
