@@ -90,11 +90,11 @@ If you are able to Run the GUI, make sure youre Trader Workstation is set up cor
 
 - Press the 'Neural Net Fitting' button (see neuralNetFitting.m)
 
-Save the historical Data by clicking 'Save to .xls'.
+- Save the historical Data by clicking 'Save to .xls'.
 
-The Sheet will be located where the Programm.m or .exe is located
+- The Sheet will be located where the Programm.m or .exe is located
 
-Press 'Disconnect' 
+- Press 'Disconnect' 
 
-Start your next analysis
+- Start your next analysis
 
