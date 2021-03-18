@@ -20,7 +20,7 @@
     <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-      <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager/issues">Report Bug</a>
+      <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager/discussions">Report Bug</a>
     ·
     <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager/issues">Request Feature</a>
   </p>
