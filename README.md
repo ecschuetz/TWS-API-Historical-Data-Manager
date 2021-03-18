@@ -86,6 +86,7 @@ If you are able to Run the GUI, make sure youre Trader Workstation is set up cor
 ### How it works
 
 - Press 'Connect' to run the given arguments from the API-Config TWS Panel and the Input Panel.(see <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager/blob/master/RealtimeStreaming.m">RealtimeStreaming.m</a>)
+    - Make sure the Stock you search for is in your watchlist in IB Trader Workstation (TWS)!
 
 - Press 'Receive Data' button to get the historical Data from your liveStream (see <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager/blob/master/Plotting.m">Plotting.m</a>)
 
