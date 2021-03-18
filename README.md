@@ -76,7 +76,7 @@ Make sure you have the latest TWS API see: https://interactivebrokers.github.io
 
 If you have a MATLAB license, just get all .m and the .fig files and Run Programm.m
 
-If you dont have MATLAB, install the .exe file in the Excecutable folder
+If you dont have MATLAB, install the .exe <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager/blob/master/Excecutable/TWS_API_Historical-Data-Manager.exe">Excecutable for Windows</a> file in the Excecutable folder
 
 If you are able to Run the GUI, make sure youre Trader Workstation is set up correctly with input arguments you choose in the GUI
 
@@ -84,11 +84,11 @@ If you are able to Run the GUI, make sure youre Trader Workstation is set up cor
 
 - Press 'Connect' to run the given arguments from the API-Config TWS Panel and the Input Panel.(see <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager/blob/master/RealtimeStreaming.m">RealtimeStreaming.m</a>)
 
-- Press 'Receive Data' button to get the historical Data from your liveStream (see Plotting.m)
+- Press 'Receive Data' button to get the historical Data from your liveStream (see <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager/blob/master/Plotting.m">Plotting.m</a>)
 
 - Select Input and Output arguments to build your own neural Network with nftool 
 
-- Press the 'Neural Net Fitting' button (see neuralNetFitting.m)
+- Press the 'Neural Net Fitting' button (see <a href="https://github.com/ecschuetz/TWS-API-Historical-Data-Manager/blob/master/neuralNetFitting.m">neuralNetFitting.m</a>)
 
 - Save the historical Data by clicking 'Save to .xls'.
 
