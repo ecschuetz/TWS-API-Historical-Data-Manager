@@ -82,17 +82,19 @@ If you are able to Run the GUI, make sure youre Trader Workstation is set up cor
 
 ### How it works
 
-click connect to make to run the given arguments from the API-Config TWS Panel and the Input Panel
+- Press 'Connect' to run the given arguments from the API-Config TWS Panel and the Input Panel.(see RealtimeStreaming.m)
 
-Run 'Receive Data' button to get the historical Data
+- Press 'Receive Data' button to get the historical Data from your liveStream (see Plotting.m)
 
-Select Input and Output arguments to build your own neural Network with nftool (click the 'Neural Net Fitting' button)
+- Select Input and Output arguments to build your own neural Network with nftool 
+
+- Press the 'Neural Net Fitting' button (see neuralNetFitting.m)
 
 Save the historical Data by clicking 'Save to .xls'.
 
 The Sheet will be located where the Programm.m or .exe is located
 
-Click Disconnect 
+Press 'Disconnect' 
 
 Start your next analysis
 
