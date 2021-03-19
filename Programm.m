@@ -22,7 +22,7 @@ function varargout = Programm(varargin)
 
 % Edit the above text to modify the response to help Programm
 
-% Last Modified by GUIDE v2.5 18-Mar-2021 23:55:31
+% Last Modified by GUIDE v2.5 19-Mar-2021 16:11:14
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -578,6 +578,7 @@ function Input8_Callback(hObject, eventdata, handles)
 % --- Executes on button press in pushbutton7.
 function pushbutton7_Callback(hObject, eventdata, handles)
 nnans=NeuralNet(handles.Input')
+set(handles.edit14,'String',nnans(end))
 cla(handles.axes1);
 axes(handles.axes1);
 plot(handles.d(:,8), 'Parent', handles.axes1);
@@ -623,3 +624,26 @@ end
 function pushbutton9_Callback(hObject, eventdata, handles)
 genFunction(handles.net,get(handles.edit2,'String'))
 msgbox(sprintf('Operation Completed! Neural Net .m file for Symbol %s was created and saved into your Folder',get(handles.edit2,'String')),'Success')
+
+
+
+function edit14_Callback(hObject, eventdata, handles)
+% hObject    handle to edit14 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit14 as text
+%        str2double(get(hObject,'String')) returns contents of edit14 as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit14_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit14 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end

@@ -1,4 +1,7 @@
 set(handles.pushbutton3,'Enable','off')
+set(handles.pushbutton7,'Enable','off')
+set(handles.pushbutton9,'Enable','off')
+set(handles.pushbutton4,'Enable','off')
 f = waitbar(0,'Get historical data...');
 set(handles.edit12,'string','Receiving data...');
 cla(handles.axes1)
@@ -29,6 +32,7 @@ xlabel('Time lapse in days per period');
 ylabel('Weighted average price');
 set(handles.pushbutton4,'Enable','on')
 set(handles.pushbutton5,'Enable','on')
+
 
  set(handles.edit12,'string','Done');
     

@@ -1,10 +1,10 @@
-
 Input=[];
 Output=[];
 
+
 %%% GETTING INPUT PARAMETERS
  if get(handles.Input2,'value')==1
-        Input=[handles.d(:,2)];
+        Input=[Input handles.d(:,2)];
     end
  if get(handles.Input3,'value')==1
         Input=[Input handles.d(:,3)];
@@ -24,6 +24,9 @@ Output=[];
     if get(handles.Input8,'value')==1
         Input=[Input handles.d(:,8)];
     end
+    [m,n]=size(Input)
+    row=Input(m,:);
+    Input=[Input;row];
     
 %%% GETTING OUTPUT PARAMETERS    
      if get(handles.Output2,'value')==1
@@ -47,6 +50,12 @@ Output=[];
     if get(handles.Output8,'value')==1
         Output=[Output handles.d(:,8)];
     end
+    
+       [m,n]=size(Output)
+    row=Output(1,:);
+    Output=[row;Output];
+
+
 assignin('base','Input',Input)
 assignin('base','Output',Output)
 handles.Input=Input;
@@ -55,5 +64,7 @@ guidata(hObject, handles);
 guidata(hObject, handles);
 Nftool
 genFunction(net,'NeuralNet')
+set(handles.pushbutton7,'Enable','on')
+set(handles.pushbutton9,'Enable','on')
 set(handles.edit12,'string','Neuronal Net Built Successful');
 
